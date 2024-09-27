@@ -1,5 +1,6 @@
 #include "monty.h"
 
+extern stack_t *head;
 
 /**
  * push_to_stack - Adds a node to the top of the stack.
