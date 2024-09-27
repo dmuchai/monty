@@ -1,6 +1,5 @@
 #include "monty.h"
 
-extern stack_t *head;
 
 /**
  * push_to_stack - Adds a node to the top of the stack.
@@ -88,21 +87,4 @@ void show_top(stack_t **stack, unsigned int line_number)
 		handle_runtime_error(7, line_number);
 
 	printf("%d\n", (*stack)->n);
-}
-/**
- * remove_top - removes a node from the stack.
- * @stack: Pointer to a pointer pointing to top node of the stack.
- * @line_number: Interger representing the line number of of the opcode.
- */
-
-void remove_top(stack_t **stack, unsigned int line_number)
-{
-	stack_t *temp;
-	if (stack == NULL || *stack == NULL)
-		handle_runtime_error(7, line_number);
-	temp = *stack;
-	*stack = temp->next;
-	if (*stack != NULL)
-		(*stack)->prev = NULL;
-	free(temp);
 }

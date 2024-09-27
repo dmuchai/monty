@@ -23,7 +23,8 @@ void display_char(stack_t **stack, unsigned int line_number)
  * @stack: pointer pointing to top node of the stack.
  * @line_number: Integer representing the line number of of the opcode.
  */
-void display_string(stack_t **stack, __attribute__((unused))unsigned int line_number)
+void display_string(stack_t **stack,
+		__attribute__((unused))unsigned int line_number)
 {
 	int ascii_value;
 	stack_t *temp;
@@ -51,7 +52,8 @@ void display_string(stack_t **stack, __attribute__((unused))unsigned int line_nu
  * @stack: pointer pointing to top node of the stack.
  * @line_number: Line number of the opcode.
  */
-void rotate_left(stack_t **stack, __attribute__((unused))unsigned int line_number)
+void rotate_left(stack_t **stack,
+		__attribute__((unused))unsigned int line_number)
 {
 	stack_t *temp;
 
@@ -75,7 +77,8 @@ void rotate_left(stack_t **stack, __attribute__((unused))unsigned int line_numbe
  * @stack: Pointer pointing to top node of the stack.
  * @line_number: Interger representing the line number of of the opcode.
  */
-void rotate_right(stack_t **stack, __attribute__((unused))unsigned int line_number)
+void rotate_right(stack_t **stack,
+		__attribute__((unused))unsigned int line_number)
 {
 	stack_t *temp;
 
