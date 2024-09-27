@@ -87,7 +87,7 @@ void peek_stack(stack_t **stack, unsigned int line_number)
 void show_top(stack_t **stack, unsigned int line_number)
 {
 	if (stack == NULL || *stack == NULL)
-		handle_runtime_error(7, line_number);
+		handle_runtime_error(6, line_number);
 
 	printf("%d\n", (*stack)->n);
 }
